@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    tools:context=".fragment.AddCourse">
+
+    <EditText
+        android:id="@+id/courseCode_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Course Code"
+        android:textSize="26sp"
+        android:layout_margin="15dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/courseName_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Course Name"
+        android:textSize="26sp"
+        android:layout_margin="15dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        ></EditText>
+
+
+    <EditText
+        android:id="@+id/courseCredit_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Course Credit"
+        android:textSize="26sp"
+        android:layout_margin="15dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        ></EditText>
+    <EditText
+        android:id="@+id/courseLecturer_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Course Lecturer"
+        android:textSize="26sp"
+        android:layout_margin="15dp"
+        android:enabled="false"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        ></EditText>
+    <Button
+        android:id="@+id/courseLecturer_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Lecturer"
+        android:textSize="20sp"
+        app:cornerRadius = "3dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:onClick="chooseLecturer"
+        android:backgroundTint="#7E7E7E"
+        ></Button>
+    <Button
+        android:id="@+id/addCourse_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Course"
+        android:textSize="20sp"
+        app:cornerRadius = "7dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:onClick="addCourse"
+        ></Button>
+
+
+
+
+
+</LinearLayout>

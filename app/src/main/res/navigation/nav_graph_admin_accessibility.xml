@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_admin_accessibility"
+    app:startDestination="@id/nav_userConfirm">
+
+    <fragment
+        android:id="@+id/nav_userConfirm"
+        android:name="com.vustuntas.studentcourseinformationsystem.fragment.ConfirmAccount"
+        android:label="User Confirm"
+        tools:layout="@layout/fragment_confirm_account">
+        <action
+            android:id="@+id/action_confirmAccount_to_addCourse"
+            app:destination="@id/nav_addCourse" />
+        <action
+            android:id="@+id/action_confirmAccount_to_addAnnouncement"
+            app:destination="@id/nav_addAnnouncement" />
+        <action
+            android:id="@+id/action_confirmAccount_to_addFoodList"
+            app:destination="@id/nav_addFoodList" />
+        <action
+            android:id="@+id/action_confirmAccount_self"
+            app:destination="@id/nav_userConfirm" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_addCourse"
+        android:name="com.vustuntas.studentcourseinformationsystem.fragment.AddCourse"
+        android:label="Add Course"
+        tools:layout="@layout/fragment_add_course">
+        <action
+            android:id="@+id/action_addCourse_to_confirmAccount"
+            app:destination="@id/nav_userConfirm" />
+        <action
+            android:id="@+id/action_addCourse_to_addFoodList"
+            app:destination="@id/nav_addFoodList" />
+        <action
+            android:id="@+id/action_addCourse_to_addAnnouncement"
+            app:destination="@id/nav_addAnnouncement" />
+        <action
+            android:id="@+id/action_nav_addCourse_to_chooseLecturer"
+            app:destination="@id/chooseLecturer" />
+        <argument
+            android:name="lecturerId"
+            app:argType="string" />
+        <argument
+            android:name="courseInfoArray"
+            app:argType="string[]" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_addAnnouncement"
+        android:name="com.vustuntas.studentcourseinformationsystem.fragment.AddAnnouncement"
+        android:label="Add Announcement"
+        tools:layout="@layout/fragment_add_announcement">
+        <action
+            android:id="@+id/action_addAnnouncement_to_confirmAccount"
+            app:destination="@id/nav_userConfirm" />
+        <action
+            android:id="@+id/action_addAnnouncement_to_addFoodList"
+            app:destination="@id/nav_addFoodList" />
+        <action
+            android:id="@+id/action_addAnnouncement_to_addCourse"
+            app:destination="@id/nav_addCourse" />
+        <action
+            android:id="@+id/action_nav_addAnnouncement_to_updateAndDeleteAnnouncement"
+            app:destination="@id/updateAndDeleteAnnouncement" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_addFoodList"
+        android:name="com.vustuntas.studentcourseinformationsystem.fragment.AddFoodList"
+        android:label="Add Food"
+        tools:layout="@layout/fragment_add_food_list">
+        <action
+            android:id="@+id/action_addFoodList_to_addCourse"
+            app:destination="@id/nav_addCourse" />
+        <action
+            android:id="@+id/action_addFoodList_to_confirmAccount"
+            app:destination="@id/nav_userConfirm" />
+        <action
+            android:id="@+id/action_addFoodList_to_addAnnouncement"
+            app:destination="@id/nav_addAnnouncement" />
+        <action
+            android:id="@+id/action_nav_addFoodList_to_updateAndDeleteFoodList"
+            app:destination="@id/updateAndDeleteFoodList" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_accountLogOut"
+        android:name="com.vustuntas.studentcourseinformationsystem.fragment.AccountLogOut"
+        tools:layout="@layout/fragment_account_log_out" />
+    <fragment
+        android:id="@+id/chooseLecturer"
+        android:name="com.vustuntas.studentcourseinformationsystem.fragment.ChooseLecturer"
+        android:label="Choose Lecturer"
+        tools:layout="@layout/fragment_choose_lecturer">
+        <action
+            android:id="@+id/action_chooseLecturer_to_nav_addCourse"
+            app:destination="@id/nav_addCourse" />
+        <argument
+            android:name="courseTransInfo"
+            app:argType="string[]" />
+        <action
+            android:id="@+id/action_chooseLecturer_to_nav_userConfirm"
+            app:destination="@id/nav_userConfirm" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateAndDeleteAnnouncement"
+        android:name="com.vustuntas.studentcourseinformationsystem.fragment.UpdateAndDeleteAnnouncement"
+        android:label="Update and Delete Announcmeent"
+        tools:layout="@layout/fragment_update_and_delete_announcement">
+        <argument
+            android:name="announcementId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_updateAndDeleteAnnouncement_to_nav_addAnnouncement"
+            app:destination="@id/nav_addAnnouncement" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateAndDeleteFoodList"
+        android:name="com.vustuntas.studentcourseinformationsystem.fragment.UpdateAndDeleteFoodList">
+        <action
+            android:id="@+id/action_updateAndDeleteFoodList_to_nav_addFoodList"
+            app:destination="@id/nav_addFoodList" />
+        <argument
+            android:name="foodId"
+            app:argType="integer" />
+    </fragment>
+</navigation>

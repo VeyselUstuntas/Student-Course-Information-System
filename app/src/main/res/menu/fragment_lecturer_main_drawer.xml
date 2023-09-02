@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_announcementAndFoodList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_menu_add_announcement"
+            android:title="Announcements and Meal of the Day" />
+        <item
+            android:id="@+id/nav_listMyCourses"
+            android:icon="@drawable/ic_menu_list_courses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:title="List My Courses I Teach" />
+        <item
+            android:id="@+id/nav_editStudentNotes"
+            android:icon="@drawable/ic_menu_student_grade_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:title="Student Grade Transactions" />
+
+
+        <item
+            android:id="@+id/nav_accountLogOut"
+            android:icon="@drawable/ic_menu_log_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:title="Log Out" />
+
+    </group>
+</menu>

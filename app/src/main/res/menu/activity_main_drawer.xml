@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_userConfirm"
+            android:icon="@drawable/ic_menu_user_approval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:title="User Confirm" />
+        <item
+            android:id="@+id/nav_addCourse"
+            android:icon="@drawable/ic_menu_add_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:title="Add Course" />
+
+        <item
+            android:id="@+id/nav_addAnnouncement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_menu_add_announcement"
+            android:title="Add Announcement" />
+
+        <item
+            android:id="@+id/nav_addFoodList"
+            android:icon="@drawable/ic_menu_add_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:title="Add Food List"
+            ></item>
+        <item
+            android:id="@+id/nav_accountLogOut"
+            android:icon="@drawable/ic_menu_log_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:title="Log Out" />
+
+    </group>
+</menu>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_lecturer_accessilibity"
+    app:startDestination="@id/nav_announcementAndFoodList">
+
+    <fragment
+        android:id="@+id/nav_announcementAndFoodList"
+        android:name="com.vustuntas.studentcourseinformationsystem.fragment.AnnouncementAndFoodList"
+        tools:layout="@layout/fragment_announcement_and_food_list" >
+        <action
+            android:id="@+id/action_nav_announcementAndFoodList_to_getAnnouncementDetails"
+            app:destination="@id/getAnnouncementDetails2" />
+    </fragment>
+    <fragment
+        android:id="@+id/getAnnouncementDetails2"
+        android:name="com.vustuntas.studentcourseinformationsystem.fragment.GetAnnouncementDetails"
+        android:label="Announcement Content"
+        tools:layout="@layout/fragment_get_announcement_details">
+        <argument
+            android:name="announcementId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_accountLogOut"
+        android:name="com.vustuntas.studentcourseinformationsystem.fragment.AccountLogOut"
+        tools:layout="@layout/fragment_account_log_out" />
+    <fragment
+        android:id="@+id/nav_listMyCourses"
+        android:name="com.vustuntas.studentcourseinformationsystem.fragment.GetMyCourseInfo"
+        android:label="My Courses "
+        tools:layout="@layout/fragment_get_my_course_info" />
+    <fragment
+        android:id="@+id/nav_editStudentNotes"
+        android:name="com.vustuntas.studentcourseinformationsystem.fragment.AddingAndCorrectingCourseNotes"
+        tools:layout="@layout/fragment_adding_and_correcting_course_notes" >
+        <action
+            android:id="@+id/action_nav_editStudentNotes_to_listMyStudents"
+            app:destination="@id/listMyStudents" />
+    </fragment>
+    <fragment
+        android:id="@+id/listMyStudents"
+        android:name="com.vustuntas.studentcourseinformationsystem.fragment.ListMyStudents"
+        tools:layout="@layout/fragment_list_my_students">
+        <argument
+            android:name="courseId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_listMyStudents_to_addOrEditStudentGrade"
+            app:destination="@id/addOrEditStudentGrade" />
+    </fragment>
+    <fragment
+        android:id="@+id/addOrEditStudentGrade"
+        android:name="com.vustuntas.studentcourseinformationsystem.fragment.AddOrEditStudentGrade"
+        android:label="Student Grade Add/Edit"
+        tools:layout="@layout/fragment_add_or_edit_student_grade">
+        <argument
+            android:name="studentId"
+            app:argType="string" />
+        <argument
+            android:name="lecturerId"
+            app:argType="string" />
+        <argument
+            android:name="courseId"
+            app:argType="string" />
+    </fragment>
+</navigation>

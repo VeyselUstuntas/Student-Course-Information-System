@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+    android:orientation="horizontal"
+    android:background="#D1D1D1">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="50dp">
+            <ImageView
+                android:id="@+id/studentImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background"/>
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/studentIdTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="studentId"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:id="@+id/studentNameSurnameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="studentNameSurname"
+            android:textSize="22sp"
+            android:padding="5dp"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:id="@+id/studentMailAddressTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="studentMailAddress"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:layout_marginBottom="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

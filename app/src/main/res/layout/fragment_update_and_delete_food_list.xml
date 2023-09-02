@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".fragment.UpdateAndDeleteAnnouncement">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_editTexts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/menuDateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#D1D1D1"
+            android:hint="Enter Menu Date"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:onClick="selectDate"/>
+
+        <EditText
+            android:id="@+id/soupNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#D1D1D1"
+            android:hint="Enter Soup Name"
+            android:textSize="28sp" />
+        <EditText
+            android:id="@+id/mainFoodEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#D1D1D1"
+            android:hint="Enter Main Dish Name"
+            android:textSize="28sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/updateFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="updateFood"
+            android:text="Update Food"
+            android:textSize="20sp"
+            app:cornerRadius="5dp"/>
+
+        <Button
+            android:id="@+id/deleteFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="deleteFood"
+            android:text="Delete Food"
+            android:textSize="20sp"
+            app:cornerRadius="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

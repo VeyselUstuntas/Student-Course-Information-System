@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_signin_signup"
+    app:startDestination="@id/signIn2">
+
+    <fragment
+        android:id="@+id/signIn2"
+        android:name="com.vustuntas.studentcourseinformationsystem.fragment.SignIn"
+        android:label="SignIn" >
+        <action
+            android:id="@+id/action_signIn_to_signUp"
+            app:destination="@id/signUp2" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUp2"
+        android:name="com.vustuntas.studentcourseinformationsystem.fragment.SignUp"
+        android:label="SignUp" >
+        <action
+            android:id="@+id/action_signUp_to_signIn"
+            app:destination="@id/signIn2" />
+    </fragment>
+</navigation>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#C3C3C3"
+    android:padding="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="2dp"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="Course Code"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"/>
+    <TextView
+        android:id="@+id/courseCodeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="courseCode"
+        android:paddingLeft="10dp"
+        android:layout_margin="5dp"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="Course Name"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"/>
+    <TextView
+        android:id="@+id/courseNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="courseName"
+        android:paddingLeft="10dp"
+        android:layout_margin="5dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="Course Credit"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"/>
+    <TextView
+        android:id="@+id/courseCreditTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="courseCredit"
+        android:paddingLeft="10dp"
+        android:layout_margin="5dp"/>
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:layout_gravity="center_vertical"
+    android:layout_margin="10dp"
+    tools:context=".view.SignUp">
+
+    <EditText
+        android:id="@+id/tcKimlikNoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter TR ID Number"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:inputType="number"
+        android:maxLength="11"
+        android:layout_margin="15dp"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/userNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:inputType="text"
+        android:layout_margin="15dp"></EditText>
+
+    <EditText
+        android:id="@+id/userSurnameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Surname"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:inputType="text"
+        android:layout_margin="15dp"></EditText>
+
+    <EditText
+        android:id="@+id/telephoneNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:hint="Enter Telephone Number"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:textSize="22sp"
+        android:textStyle="bold"></EditText>
+
+    <EditText
+        android:id="@+id/mailAddressEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Mail Address"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:inputType="textEmailAddress"
+        android:layout_margin="15dp"></EditText>
+
+    <RadioGroup
+        android:id="@+id/titleRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <RadioButton
+            android:id="@+id/studentRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="Student"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/lecturerRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="Lecturer"></RadioButton>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:onClick="signUp"
+        android:text="Sign Up"
+        android:textSize="22sp"
+        app:cornerRadius="8dp"
+        ></Button>
+
+
+</LinearLayout>

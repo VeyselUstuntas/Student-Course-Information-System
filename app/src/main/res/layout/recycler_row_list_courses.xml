@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_margin="10dp"
+    android:background="#D3D0D0">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Course Code"
+        android:textSize="26sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/recycler_row_courseCodeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="courseCode"
+        android:textSize="24sp"
+        android:paddingLeft="10dp"
+        android:layout_margin="5dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Course Name"
+        android:textSize="26sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/recycler_row_courseNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="courseName"
+        android:textSize="24sp"
+        android:paddingLeft="10dp"
+        android:layout_margin="5dp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Course Lecturer"
+        android:textSize="26sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/recycler_row_courseLecturerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="courseLecturer"
+        android:textSize="24sp"
+        android:paddingLeft="10dp"
+        android:layout_margin="5dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Course Credit"
+        android:textSize="26sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/recycler_row_courseCreditTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="courseCredit"
+        android:textSize="24sp"
+        android:paddingLeft="10dp"
+        android:layout_margin="5dp"
+        />
+
+    <Button
+        android:id="@+id/recycler_row_course_takeDropButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take/Drop the Course"
+        android:textSize="16sp"
+        android:layout_margin="10dp"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:onClick="takeDropCourse"
+        app:cornerRadius = "7dp"/>
+
+
+</LinearLayout>

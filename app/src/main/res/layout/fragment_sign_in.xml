@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    tools:context=".view.SignIn">
+    <EditText
+        android:id="@+id/userNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter TR ID Number"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:inputType="number"
+        android:maxLength="11"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/userPasswordEditTextt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:inputType="textPassword"
+        ></EditText>
+
+    <CheckBox
+        android:id="@+id/showPasswordCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Show Password"
+        android:textStyle="bold"
+        ></CheckBox>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/signUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="signUp"
+            android:text="Sign Up"
+            android:textSize="22sp"
+            app:cornerRadius="8dp"
+            ></Button>
+
+        <Button
+            android:id="@+id/signIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:textSize="22sp"
+            android:layout_margin="10dp"
+            android:onClick="signIn"
+            app:cornerRadius = "8dp"
+            ></Button>
+    </LinearLayout>
+
+</LinearLayout>

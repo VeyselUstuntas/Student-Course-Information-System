@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_student_accessibility"
+    app:startDestination="@id/nav_announcementAndFoodList">
+
+    <fragment
+        android:id="@+id/nav_announcementAndFoodList"
+        android:name="com.vustuntas.studentcourseinformationsystem.fragment.AnnouncementAndFoodList"
+        tools:layout="@layout/fragment_announcement_and_food_list">
+        <action
+            android:id="@+id/action_nav_announcementAndFoodList_to_getAnnouncementDetails"
+            app:destination="@id/getAnnouncementDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_accountLogOut"
+        android:name="com.vustuntas.studentcourseinformationsystem.fragment.AccountLogOut"
+        tools:layout="@layout/fragment_account_log_out" />
+    <fragment
+        android:id="@+id/getAnnouncementDetails"
+        android:name="com.vustuntas.studentcourseinformationsystem.fragment.GetAnnouncementDetails"
+        android:label="Announcement Details"
+        tools:layout="@layout/fragment_get_announcement_details">
+        <argument
+            android:name="announcementId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_listCourses"
+        android:name="com.vustuntas.studentcourseinformationsystem.fragment.ListCourses"
+        android:label="Course Selection"
+        tools:layout="@layout/fragment_list_courses" />
+    <fragment
+        android:id="@+id/nav_viewNotes"
+        android:name="com.vustuntas.studentcourseinformationsystem.fragment.ListMyGrades"
+        android:label="List My Grades"
+        tools:layout="@layout/fragment_list_my_grades" />
+</navigation>

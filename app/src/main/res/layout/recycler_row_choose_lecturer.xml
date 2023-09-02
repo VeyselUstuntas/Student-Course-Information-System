@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#E6E6E6"
+    android:layout_margin="7dp">
+
+    <TextView
+        android:id="@+id/lecturerIdTextView_recycler_row_choose_lecturer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lecturer Id Number"
+        android:textSize="24sp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_margin="5dp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/lecturerNameTextView_recycler_row_choose_lecturer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lecturer Name"
+        android:textSize="24sp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_margin="5dp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/lecturerSurnameTextView_recycler_row_choose_lecturer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lecturer Surname"
+        android:textSize="24sp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_margin="5dp"
+        ></TextView>
+</LinearLayout>
