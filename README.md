@@ -1,5 +1,7 @@
 # Student Course Information System
 
+A course information platform where students can select courses, view their grades, lecturers can grade their students and the system administrator can add courses, announcements and lunch lists to the system.
+
 * The application is based on fragments that allow students to take courses, view course grades, view announcements made by the system administrator and view the food list.
 
 
